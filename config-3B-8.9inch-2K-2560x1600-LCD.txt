@@ -1,0 +1,35 @@
+#https://www.riscosopen.org/wiki/documentation/show/config.txt%20(Raspberry%20Pi)
+#https://www.nanodlp.com/forum/viewtopic.php?id=1574
+#https://www.raspberrypi.org/documentation/configuration/config-txt/video.md
+#https://www.raspberrypi.com.tw/tutorial/faq/
+#https://www.raspberrypi-spy.co.uk/2013/05/how-to-disable-the-red-led-on-the-pi-camera-module/
+#https://www.raspberrypi.org/documentation/configuration/device-tree.md
+
+gpu_mem=128
+hdmi_force_hotplug=1
+
+# HDMI Basic configuration
+hdmi_pixel_freq_limit=250000000
+hdmi_timings=2560 0 123 10 30 1600 0 12 4 4 0 0 0 50 0 222183000 0
+hdmi_drive=2
+disable_overscan=1
+max_framebuffer_width=2560
+max_framebuffer_height=1600
+
+# Portrait or Landscape Setting
+display_rotate=0
+framebuffer_width=2560
+framebuffer_height=1600
+
+config_hdmi_boost = 0
+
+dtparam=i2c_arm=on
+dtparam=audio=on
+dtparam=spi=on
+enable_uart=1
+start_x=1
+
+#dtoverlay=pi3-disable-bt
+#disable_camera_led=1
+#hdmi_pixel_encoding=2
+#dtparam=i2c1=on

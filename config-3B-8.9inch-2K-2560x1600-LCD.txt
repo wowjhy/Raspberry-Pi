@@ -28,8 +28,3 @@ dtparam=audio=on
 dtparam=spi=on
 enable_uart=1
 start_x=1
-
-#dtoverlay=pi3-disable-bt
-#disable_camera_led=1
-#hdmi_pixel_encoding=2
-#dtparam=i2c1=on
